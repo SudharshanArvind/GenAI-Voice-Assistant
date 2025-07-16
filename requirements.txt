@@ -1,0 +1,6 @@
+speechrecognition
+whisper
+gtts
+playsound
+langdetect
+requests
