@@ -8,7 +8,7 @@ from playsound import playsound
 from langdetect import detect
 
 # 📌 Insert your Gemini API Key here (or use env var)
-GOOGLE_API_KEY = "AIzaSyDFCosiqCVpW9T0WLPJM_YrxSGsV17I9yc"
+GOOGLE_API_KEY = "YOUR_API_KEY"
 
 # Authenticate with Gemini
 genai.configure(api_key=GOOGLE_API_KEY)
