@@ -43,3 +43,55 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # 3. Install dependencies
 pip install -r requirements.txt
+```
+
+## 🧠 Ollama & Gemma Setup (LLM Backend)
+
+### Step-by-Step Setup
+
+1. Install Ollama (if not already installed)
+
+  - Download from: https://ollama.com/download
+
+  - Follow OS-specific installation instructions.
+
+2. Pull the Gemma Model
+```
+ollama pull gemma3:12b
+```
+This will download and prepare the 12B Gemma model locally.
+
+3. Start Ollama Server
+Make sure the Ollama backend is running:
+```
+ollama run gemma3:12b
+```
+This will serve Gemma locally at http://localhost:11434, which the Python script uses to fetch responses.
+
+
+## 🧪 Running the Assistant
+```
+python app.py
+```
+### Usage Tips:
+
+- Speak in any language.
+
+- Say "exit", "quit", or "stop" to terminate the loop.
+
+- Ensure you're connected to the internet (for gTTS).
+
+- Ensure Ollama is running before launching the script.
+
+## 📌 requirements.txt
+
+- speechrecognition
+- whisper
+- gtts
+- playsound
+- langdetect
+- requests
+
+## 📄 License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
